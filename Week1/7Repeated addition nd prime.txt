@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+ //   Repeated addition nd checking whether it's prime;
+    int n,sum=0;
+    scanf("%d",&n);
+    while(n>0 || sum>9){
+     if (n==0){
+       n=sum;
+       sum=0;}
+      sum+=(n%10);
+      n=n/10;}
+    printf("%d",sum);
+    if(sum==2 || sum==3 || sum==5 || sum==7)
+      printf("\n1");
+    else
+      printf("\n0");
+
+    return 0;
+}

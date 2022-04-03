@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+  int main() {
+  //Perfect square numbers upto a range
+  int n,i,j;
+  std::cin >> n;
+  for(i=1;i<=(n/2);i++){
+    j=i;
+  if((i*j)<=n)
+      std::cout<<i*j;
+      std::cout<<"\n";
+    
+  }
+
+#include <iostream>
+
+using namespace std;
+  int main() {
+  //Checking Perfect square numbers 
+  int n,i,j,r=0;
+  std::cin >> n;
+  for(i=1;i<=(n/2);i++){
+    j=i;
+     if((i*j)==n)
+      r++;}
+  if(r>0)
+    std::cout<<"Perfect Square";
+  else
+    std::cout<<"Not";
+    return 0;
+}
